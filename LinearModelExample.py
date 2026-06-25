@@ -26,9 +26,9 @@ for w in np.arange(0.0, 4.1, 0.1):
         loss_val = loss(x_val, y_val)
         l_sum += loss_val
         print('\t', x_val, y_val, y_pred_val, loss_val)
-    print('MSE=', l_sum/3)
+    print('MSE=', l_sum/5)
     w_list.append(w)
-    mse_list.append(l_sum/3)
+    mse_list.append(l_sum/5)
 
 # to draw the graph, we use: 
 # plt.plot(w_list, mse_list)
